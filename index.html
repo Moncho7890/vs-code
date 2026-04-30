@@ -1,25 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Web Page</title>
 </head>
+
 <body>
-    <header class="site-header">
-        <h1 class="site-header__title">Welcome to My Website</h1>
-        <div class="site-header__right">
-            <button id="theme-toggle" class="btn">テーマ切替</button>
-            <nav>
-                <ul class="site-nav__list">
-                    <li><a class="site-nav__link" href="#home">Home</a></li>
-                    <li><a class="site-nav__link" href="#about">About</a></li>
-                    <li><a class="site-nav__link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <script src="js/theme.js"></script>
+    <section>
+        <h1 id="target">ゲスト</h1>
+        <button onclick="sayHello()">Click </button>
+    </section>
+    <!-- counter section -->
+    <section>
+        <p id="counter">0</p>
+        <button onclick="incrementCounter()">+1</button>
+        <button onclick="decrementCounter()">-1</button>
+        <button onclick="reset()">Reset</button>
+    </section>
+
+    <!--image section-->
+    <section>
+        <img id="photo" src="assets/images/cat.jpg" width="320">
+        <button onclick="changePhoto()">Change Photo</button>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/image.js"></script>
+
 </body>
+
 </html>
